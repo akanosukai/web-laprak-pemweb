@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laporan Teknis HTML — Halaman Artikel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page2">
+  <div class="outer-bg">
+    <div class="container" role="main" aria-labelledby="page-title">
+
+      <nav class="top-nav" aria-label="Navigasi halaman">
+        <a class="btn prev-btn" href="index.html">Previous Page</a>
+      </nav>
+
+      <h1 id="page-title" class="center-title">Halo! Ini adalah tampilan teknis laporan di HTML!</h1>
+
+      <!-- PDF embed: ganti src sesuai nama file/URL; gunakan file tanpa spasi -->
+      <section class="pdf-section" aria-labelledby="pdf-title">
+        <h2 id="pdf-title" class="sr-only">File PDF Teknis Laporan</h2>
+
+        <!-- Preferensi: simpan pdf sebagai 'teknis-laporan-I.pdf' di folder yang sama -->
+        <div class="pdf-box" title="Preview PDF laporan">
+          <iframe
+            class="pdf-frame"
+            src="c:\Users\ACER\Downloads\teknis laporan I.pdf"
+            width="100%"
+            height="420"
+            frameborder="0"
+            aria-label="Pratinjau PDF teknis laporan"
+          >
+            <!-- fallback jika iframe tidak didukung -->
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Screenshot kode dan penjelasan -->
+      <section class="content-box" aria-labelledby="screenshot-title">
+        <h3 id="screenshot-title">Screenshot Kode dan Penjelasan:</h3>
+
+        <!-- area screenshot (gambar sebenarnya taruh ke asset/img/ lalu gunakan <img>) -->
+        <div class="screenshot-placeholder" role="img" aria-label="Area screenshot kode (gantikan dengan gambar)">
+          <!-- Jika ada screenshot, ganti baris <div> ini dengan:
+               <img src="asset/img/screenshot-kode.png" alt="Screenshot kode dan tampilan" /> -->
+         
+        </div>
+        <h4>1. index.html</h4>
+        <img src="Screenshot 2025-11-01 223651.png" width="125" />
+        <p class="explain">
+          Menandakan halaman ini memakai HTML5 dan berbahasa Indonesia. Ini memberi tahu browser bagaimana menampilkan isi halaman.
+        </p>
+        <div>
+           <img src="gambar2.png" width="160" />
+        <p>Bagian ini menyimpan informasi penting seperti:
+
+            meta charset agar huruf tampil benar,
+
+            meta viewport agar tampilan responsif di HP/laptop,
+
+            title untuk judul tab browser,
+
+            link untuk menghubungkan file CSS yang mengatur desain.</p>
+        </div>
+        <div>
+          <img src="gambar3.png" width="160" />
+          <p>Tempat semua konten yang akan terlihat di layar. Class page1 digunakan untuk pengaturan tampilan lewat CSS.</p>
+        </div>
+        <div>
+           <img src="gambar4.png" width="190" />
+           <p>Berfungsi sebagai wadah utama semua elemen di halaman agar tata letaknya rapi dan mudah diatur.</p>
+        </div>
+        <div>
+         <img src="gambar5.png" width="220" /> 
+          <p>Menampilkan gambar profil. Atribut alt memberi teks pengganti jika gambar gagal dimuat, dan class="profile-img" dipakai untuk mengatur bentuk/ukuran foto lewat CSS</p>
+        </div>
+        <div>
+          <img src="gambar6.png" width="220" /> 
+          <p>Berisi perkenalan diri, hobi, dan fakta unik.
+          Tag h2 untuk judul, p untuk paragraf, dan b menebalkan teks “Fun fact”.</p>
+        </div>
+        <div>
+          <img src="gambar7.png" width="290" /> 
+          <p>Membuat tombol yang mengarah ke halaman berikutnya (Article.html). Class next-btn digunakan untuk memberi gaya tombol melalui CSS.</p>
+        </div>
+        <div>
+         <img src="gambar8.png" width="100" /> 
+         <p>Menutup semua tag dan menandakan akhir dari dokumen HTML.</p>
+        </div>
+        <h4>2. Article.html</h4>
+        <img src="gambar9.png" width="130" /> 
+        <p>Baris ini menunjukkan bahwa dokumen menggunakan HTML5 dan bahasa utamanya adalah Bahasa Indonesia (lang="id"). Ini penting agar browser dan mesin pencari memahami format serta bahasa halaman.</p>
+        <div>
+           <img src="gambar10.png" width="200" /> 
+           <p>Bagian <head> berisi informasi dasar halaman:
+
+            charset="utf-8" memastikan semua karakter dan simbol tampil benar.
+
+            viewport membuat tampilan responsif di layar HP dan laptop.
+
+            title menampilkan judul di tab browser.
+
+            link menghubungkan halaman ini ke file CSS eksternal (style.css) yang mengatur tampilan.</p>
+        </div>
+        <div>
+          <img src="gambar11.png" width="200" /> 
+          <p>Tag <body> berisi seluruh konten yang terlihat di layar.
+          Kelas page2 dipakai untuk memberi gaya berbeda (via CSS) khusus untuk halaman artikel ini — misalnya warna latar, tata letak, dll.</p>
+        </div>
+        <div>
+          <img src="gambar12.png" width="300" />
+          <p>Kedua div ini adalah wadah utama halaman.
+
+            .outer-bg kemungkinan memberi latar belakang berwarna (misalnya biru seperti di panduan).
+
+            .container berfungsi untuk membungkus seluruh isi agar tampil rapi di tengah halaman.
+
+            role="main" dan aria-labelledby="page-title" adalah atribut aksesibilitas agar pembaca layar tahu bahwa ini adalah area utama halaman.</p>
+        </div>
+        <div>
+          <img src="gambar13.png" width="300" />
+          <p>Bagian nav berisi navigasi — di sini hanya ada satu tombol “Previous Page” untuk kembali ke index.html.
+            Kelas prev-btn dan btn dipakai untuk membuat tombol bergaya lewat CSS (biasanya berbentuk kotak dengan warna latar).</p>
+        </div>
+        <div>
+           <img src="gambar14.png" width="300" />
+           <p>Menampilkan judul utama halaman.
+              Kelas center-title biasanya membuat teks di tengah, dan id="page-title" menghubungkan elemen ini ke atribut aksesibilitas di atas.</p>
+        </div>
+        <div>
+          <img src="gambar15.png" width="180" />
+          <p>Ini bagian inti halaman yang menampilkan file PDF laporan teknis langsung di halaman web.
+
+            Elemen iframe digunakan untuk menyematkan (embed) file PDF.
+
+            Atribut src="teknis-laporan-I.pdf" menunjuk ke file PDF yang ada di folder yang sama.
+
+            width="100%" dan height="420" mengatur ukuran tampilan PDF.
+
+            Jika iframe tidak didukung, ada teks cadangan (fallback) dengan tautan agar pengguna bisa membuka PDF di tab baru.</p>
+        </div>
+        <div>
+          <img src="gambar16.png" width="150" />
+          <p>Bagian ini disiapkan untuk menampilkan gambar hasil screenshot kode HTML dan tampilannya, serta penjelasan singkat tentang kode.
+
+              Sementara ini masih berupa div kosong sebagai placeholder.
+
+              Nantinya, kamu bisa menggantinya dengan tag img:</p>
+        </div>
+        <div>
+          <img src="gambar17.png" width="180" />
+          <p>Bagian footer berisi keterangan tambahan di bagian bawah halaman.
+              Pesan ini mengingatkan bahwa semua file gambar atau video harus disimpan di dalam folder asset/.</p>
+        </div>
+        <div>
+          <img src="gambar18.png" width="130" />
+          <p>Menutup seluruh elemen pembungkus (container, outer-bg, body, dan html).
+              Menandakan akhir dari struktur dokumen.</p>
+        </div>
+        <h4>3. Style.css</h4>
+        <img src="gambar19.png" width="180" />
+        <p>Font menggunakan Times New Roman dengan gaya serif klasik, cocok untuk tampilan formal seperti dokumen atau portofolio.
+
+            Ukuran teks 12pt dan jarak antar baris (line-height) 1.5 membuat teks lebih mudah dibaca.
+
+            Margin dan padding diatur ke nol agar tidak ada ruang kosong bawaan di tepi halaman.
+
+            Latar belakang halaman (background-color) menggunakan warna biru (#2d68c4), memberi kesan profesional dan tenang.
+
+            Warna teks (color) hitam (#000), kontras dengan latar belakang biru.
+
+            Penataan teks (text-align) diatur ke tengah, membuat elemen-elemen di dalam body secara default berada di tengah halaman.</p>
+            <div>
+              <img src="gambar20.png" width="180" />
+              <P>Lebar maksimum (max-width) dibatasi hingga 700px agar tampilan tidak terlalu lebar di layar besar.
+
+                Margin: 40px auto berarti jarak atas–bawah 40px dan sisi kiri–kanan otomatis, sehingga kontainer berada di tengah halaman.
+
+                Latar belakang putih membuat isi konten kontras dengan warna biru halaman.
+
+                Padding 20px memberi ruang di dalam kontainer agar teks tidak menempel ke tepi.
+
+                Border-radius 12px melengkungkan sudut kotak agar tampil lembut.
+
+                Box-shadow menambahkan efek bayangan halus di sekitar kotak, memberi kesan mengambang di atas latar belakang.</P>
+            </div>
+            <div>
+              <img src="gambar21.png" width="180" />
+              <p>Ukuran tetap 120x120 piksel agar seragam.
+
+                  Border-radius 50% menjadikannya berbentuk lingkaran sempurna.
+
+                  Object-fit: cover memastikan gambar tetap proporsional dan memenuhi area bulat tanpa terdistorsi.
+
+                  Border putih 3px memberikan bingkai yang rapi.
+
+                  Bayangan lembut (box-shadow) menambah dimensi dan kedalaman pada foto.
+
+                  Jarak bawah (margin-bottom) 15px memberi ruang antara foto dan elemen di bawahnya.</p>
+            </div>
+            <div>
+               <img src="gambar22.png" width="160" />
+               <p>Tipe inline-block memungkinkan tombol memiliki lebar dan tinggi seperti blok, tapi tetap sebaris dengan elemen lain.
+
+                  Padding memberi ruang di dalam tombol, membuatnya mudah diklik.
+
+                  Warna latar biru tua (#0d47a1) dan teks putih memberi kontras jelas.
+
+                  Tidak ada garis bawah (text-decoration: none) agar terlihat seperti tombol, bukan link biasa.
+
+                  Border-radius 8px melunakkan sudut tombol.
+
+                  Huruf tebal (font-weight: bold) membuat teks tombol menonjol.
+
+                  Efek transisi (transition: 0.3s) membuat perubahan warna saat hover terlihat halus.
+
+                  Saat pengguna mengarahkannya dengan kursor (hover), tombol berubah warna menjadi biru lebih terang (#1976d2), memberi umpan balik visual yang interaktif.</p>
+            </div>
+            <div>
+               <img src="gambar23.png" width="160" />
+               <p>Teks rata kiri–kanan (justify) membuat paragraf terlihat rapi seperti dokumen formal.
+
+                  Latar belakang putih konsisten dengan gaya kontainer utama.
+
+                  Padding 15px membuat isi tidak menempel ke pinggir.
+
+                  Border-radius 10px sedikit melengkungkan sudut.
+
+                  Margin-top 10px menambah jarak dari elemen di atasnya agar tidak menumpuk.</p>
+            </div>
+            <div>
+               <img src="gambar24.png" width="160" />
+               <p>Latar belakang biru (#2d68c4) membuatnya senada dengan tema utama halaman.
+
+                  Padding 10px dan border-radius 10px menjaga tampilan tetap rapi dan lembut.
+
+                  Margin vertikal 20px memberi ruang di atas dan bawah agar tidak terlalu rapat dengan elemen lain.</p>
+            </div>
+            <div>
+              <img src="gambar17.png" width="160" />
+              <p>Keduanya memiliki latar belakang biru yang sama, sehingga menjaga konsistensi visual antar halaman. Namun, pengaturan ini membuka kemungkinan untuk menyesuaikan warna atau gaya berbeda di masa depan (misalnya halaman 3 bisa punya warna lain).</p>
+            </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>Dokumen dibuat untuk kebutuhan Laporan Teknis I — pastikan semua asset berada di folder <code>asset/</code>.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
